@@ -37,10 +37,7 @@
 </template>
 
 <script>
-import Vue from "vue";
-import { Card } from "element-ui";
-import FollowContent from "@/components/Content/followContent";
-Vue.use(Card);
+import FollowContent from "@/components/Content/followContent"
 
 export default {
   name: "Follow", //关注页组件
