@@ -1,6 +1,12 @@
 # 主页-关注页
 
-![image](https://user-images.githubusercontent.com/45302883/184609081-7715c926-21a3-49c6-89c6-0aeba6509c63.png)
+### 直播写代码
+
+![1$2~S A J_}74D}Y{PM%)E](https://user-images.githubusercontent.com/45302883/184674349-9a8675e3-44be-4ddc-bbc1-7fae34518128.png)
+### 页面效果图
+
+![image](https://user-images.githubusercontent.com/45302883/184674446-34aebb2a-9978-48ce-bbcb-d56bb9b09f29.png)
+
 
 
 vue前端启动方法
