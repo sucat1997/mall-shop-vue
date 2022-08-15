@@ -1,45 +1,31 @@
 <template>
-  <div id="app">
-    <van-popup
-      v-model="show"
-      position="left"
-      duration="0.2"
-      :transition-appear="true"
-      round
-      :style="{ width: '70%', height: '100%' }"
-    >
+  <div id="app" class="wrapper">
+    <van-popup v-model="show" position="left" duration="0.2" :transition-appear="true" round :style="{ width: '70%', height: '100%' }">
       <van-cell is-link>展示弹出层</van-cell>
       <van-cell is-link>展示弹出层</van-cell>
       <van-cell is-link>展示弹出层</van-cell>
       <van-cell is-link>展示弹出层</van-cell>
       <van-cell is-link>展示弹出层</van-cell>
     </van-popup>
+    <!-- 顶部导航栏 -->
+    <van-tabs v-model="activeName" :animated="true" duration="0.5" sticky swipeable>
+      <template slot="nav-left">
+        <van-icon class="v-tab-left" name="https://b.yzcdn.cn/vant/icon-demo-1126.png" size="28" @click="openLeftPopup" />
+      </template>
+      <van-tab title="关注" class="background-color:red" name="follow">
+        <follow />
+      </van-tab>
+      <van-tab title="发现" name="find">
+        <find />
+      </van-tab>
+      <van-tab :title="localCity" name="city">
+        <local-city-message />
+      </van-tab>
+      <template slot="nav-right">
+        <van-icon class="v-tab-right" name="search" size="28" />
+      </template>
+    </van-tabs>
 
-    <div>
-      <!-- 顶部导航栏 -->
-      <van-tabs
-        v-model="activeName"
-        :animated="true"
-        duration="0.5"
-        sticky
-        swipeable
-      >
-        <template slot="nav-left">
-          <van-icon
-            class="v-tab-left"
-            name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
-            size="28"
-            @click="openLeftPopup"
-          />
-        </template>
-        <van-tab title="关注" name="follow"><follow /></van-tab>
-        <van-tab title="发现" name="find"><find /></van-tab>
-        <van-tab :title="localCity" name="city"><local-city-message /></van-tab>
-        <template slot="nav-right">
-          <van-icon class="v-tab-right" name="search" size="28" />
-        </template>
-      </van-tabs>
-    </div>
     <!-- 底部导航栏 -->
     <bottom-tabbar />
   </div>

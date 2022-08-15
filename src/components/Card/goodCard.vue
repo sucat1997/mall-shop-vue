@@ -1,16 +1,9 @@
 <template>
   <div id="app">
-    <element-card>
-      <img
-        src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-        class="image"
-      />
+    <element-card shadow="never">
+      <van-image width="100%" height="10rem" fit="contain" :src="imgSrc" />
       <div style="padding: 14px">
-        <span>好吃的汉堡</span>
-        <div class="bottom clearfix">
-          <time class="time">{{ currentDate }}</time>
-          <el-button type="text" class="button">操作按钮</el-button>
-        </div>
+        <span>{{text}}</span>
       </div>
     </element-card>
   </div>
@@ -24,6 +17,7 @@ export default {
   components: {
     ElementCard: Card,
   },
+  props: ["imgSrc", "text"],
   data() {
     return {
       currentDate: new Date(),

@@ -21,3 +21,4 @@ start-nginx.bat - 快捷方式.lnk
 stop-all-nginx.bat - 快捷方式.lnk
 nginx-1.19.6.rar
 *.rar
+stop-nginx.bat - 快捷方式.lnk

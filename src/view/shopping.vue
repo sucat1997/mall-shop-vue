@@ -30,11 +30,11 @@
     </form>
     <div style="padding-left: 10px; padding-right: 10px">
       <van-swipe
-        :autoplay="1500"
+        :autoplay="2000"
         style="background-color: red; border-radius: 10px"
       >
         <van-swipe-item v-for="(image, index) in images" :key="index">
-          <van-image width="10rem" height="10rem" fit="contain" :src="image" />
+          <van-image width="100%" height="10rem" fit="contain" :src="image" />
         </van-swipe-item>
       </van-swipe>
 
@@ -87,11 +87,12 @@ export default {
   data() {
     return {
       images: [
-        "https://img01.yzcdn.cn/vant/apple-1.jpg",
-        "https://img01.yzcdn.cn/vant/apple-2.jpg",
-        "https://img01.yzcdn.cn/vant/apple-2.jpg",
-        "https://img01.yzcdn.cn/vant/apple-2.jpg",
-        "https://img01.yzcdn.cn/vant/apple-2.jpg",
+        require('@/assets/img/lunbo/1.png'),
+        require('@/assets/img/lunbo/3.png'),
+        require('@/assets/img/lunbo/2.png'),
+        require('@/assets/img/lunbo/1.png'),
+        require('@/assets/img/lunbo/4.png'),
+        require('@/assets/img/lunbo/3.png'),
       ],
       searchValue: "",
       hotWord: "香水小样",

@@ -30,7 +30,7 @@
         <follow-content />
       </div>
     </van-pull-refresh>
-    <div style="padding-left: 5px; padding-right: 5px" else-if="isIos" >
+    <div style="padding-left: 5px; padding-right: 5px" v-if="isIos" >
       <follow-content />
     </div>
   </div>
