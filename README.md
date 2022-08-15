@@ -1,3 +1,10 @@
+主页-关注页
+![image](https://user-images.githubusercontent.com/45302883/184609081-7715c926-21a3-49c6-89c6-0aeba6509c63.png)
+
+
+vue前端启动方法
+默认端口2088
+
 # mall-shop-vue
 
 > mall-shop-vue
