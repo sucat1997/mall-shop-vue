@@ -10,10 +10,13 @@
       </van-row>
       <van-row style="padding:4px;">
         <van-col span="12">
-          <div style="padding-top:3px;float:left">
-            <van-image style="padding-right:5px" width="1.5rem" height="1.5rem" fit="scale-down" :src="userSrc" round/>
-            <span style="font-size:10px;">{{userName}}</span>
-          </div>
+          <van-row>
+            <van-col span="24">
+              <div style="padding-top:3px;float:left">
+                <van-image style="padding-right:5px" width="1.5rem" height="1.5rem" fit="scale-down" :src="userSrc" round />
+                <div style="font-size:10px;">{{userName}}</div>
+              </div>
+            </van-col>
         </van-col>
         <van-col span="12">
           <div style="padding-top:15px; float:right">
