@@ -2,14 +2,32 @@
   <div id="app">
     <van-row type="flex">
       <van-col span="12">
-        <info-card v-for="(item, index) in leftList" :key="index" style="padding-top:5px; padding-right:2.5px" :userName="'妲己'" 
-        :userSrc="item.userSrc" :text="index%3 == 0? longText + longText + longText + longText + longText : longText" 
-        :imgSrc="item.imgSrc" :like="Math.round(Math.random()*10000)" />
+        <info-card
+          v-for="(item, index) in leftList"
+          :key="index"
+          style="padding-top: 5px; padding-right: 2.5px"
+          :userName="'妲己'"
+          :userSrc="item.userSrc"
+          :text="
+            index % 3 == 0
+              ? longText + longText + longText + longText + longText
+              : longText
+          "
+          :imgSrc="item.imgSrc"
+          :like="Math.round(Math.random() * 10000)"
+        />
       </van-col>
       <van-col span="12">
-        <info-card v-for="(item, index) in rightList" :key="index + 1" style="padding-top:5px; padding-left:2.5px" 
-        :userName="'主人'" :userSrc="item.userSrc" :text="index%2 == 0 ? longText : longText + longText + longText" 
-        :imgSrc="item.imgSrc" :like="Math.round(Math.random()*10000)" />
+        <info-card
+          v-for="(item, index) in rightList"
+          :key="index + 1"
+          style="padding-top: 5px; padding-left: 2.5px"
+          :userName="'主人'"
+          :userSrc="item.userSrc"
+          :text="index % 2 == 0 ? longText : longText + longText + longText"
+          :imgSrc="item.imgSrc"
+          :like="Math.round(Math.random() * 10000)"
+        />
       </van-col>
     </van-row>
   </div>
@@ -102,3 +120,5 @@ export default {
   },
 };
 </script>
+<style scoped>
+</style>

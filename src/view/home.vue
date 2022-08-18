@@ -1,11 +1,7 @@
 <template>
   <div id="app" class="wrapper">
-    <van-popup v-model="show" position="left" duration="0.2" :transition-appear="true" round :style="{ width: '70%', height: '100%' }">
-      <van-cell is-link>展示弹出层</van-cell>
-      <van-cell is-link>展示弹出层</van-cell>
-      <van-cell is-link>展示弹出层</van-cell>
-      <van-cell is-link>展示弹出层</van-cell>
-      <van-cell is-link>展示弹出层</van-cell>
+    <van-popup v-model="show" close-icon="close" position="left" duration="0.3" :transition-appear="true" :style="{ width: '100%', height: '100%' }">
+
     </van-popup>
     <!-- 顶部导航栏 -->
     <van-tabs v-model="activeName" :animated="true" duration="0.5" sticky swipeable>

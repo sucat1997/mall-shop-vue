@@ -39,35 +39,8 @@
       </van-swipe>
 
       <van-grid :border="false" :column-num="5">
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
+        <van-grid-item v-for="(image, index) in images2List" :key="index">
+          <van-image :src="image" />
         </van-grid-item>
       </van-grid>
     </div>
@@ -93,6 +66,14 @@ export default {
         require('@/assets/img/lunbo/1.png'),
         require('@/assets/img/lunbo/4.png'),
         require('@/assets/img/lunbo/3.png'),
+      ],
+      images2List:[
+        "https://img01.yzcdn.cn/vant/apple-1.jpg",
+        "https://img01.yzcdn.cn/vant/apple-1.jpg",
+        "https://img01.yzcdn.cn/vant/apple-1.jpg",
+        "https://img01.yzcdn.cn/vant/apple-1.jpg",
+        "https://img01.yzcdn.cn/vant/apple-1.jpg",
+        "https://img01.yzcdn.cn/vant/apple-1.jpg",
       ],
       searchValue: "",
       hotWord: "香水小样",

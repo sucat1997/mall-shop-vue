@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style="padding-bottom:60px;">
     <van-pull-refresh
       v-model="isLoading"
       :head-height="80"
